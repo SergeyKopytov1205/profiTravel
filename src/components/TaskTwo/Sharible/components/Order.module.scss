@@ -1,0 +1,28 @@
+.order__container {
+   margin-left: auto;
+   display: flex;
+   align-items: center;
+}
+.order__name {
+   margin-right: 25px;
+   color: #888;
+   font-size: 18px;
+   line-height: 125%;
+}
+.order__weeks {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+.order__week {
+   background: #ffffff;
+   border-radius: 20px;
+   padding: 5px 9px;
+   color: #191919;
+   font-size: 16px;
+   line-height: 130%;
+}
+.order__week_active {
+   background: #185adb;
+   color: #fff;
+}

@@ -1,0 +1,52 @@
+.title__container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 20px auto 20px;
+}
+.title__content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 17px;
+}
+.title__name {
+   font-family: "Proxima Nova Bold";
+   font-style: normal;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 110%;
+   color: #000222;
+}
+.title__toggle {
+   border: 1px solid #000222;
+   border-radius: 46px;
+   padding: 12px 21px;
+   &:hover {
+      cursor: pointer;
+   }
+   span {
+      margin-left: 6px;
+      color: #888899;
+      padding-right: 12px;
+      position: relative;
+   }
+   span::after {
+      display: block;
+      content: "";
+      width: 12px;
+      height: 9px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background: url("./../../../extract/images/arrow.png") center center no-repeat;
+      background-size: contain;
+   }
+}
+
+@media screen and (max-width: 1280px) {
+   .title__toggle {
+      display: none;
+   }
+}

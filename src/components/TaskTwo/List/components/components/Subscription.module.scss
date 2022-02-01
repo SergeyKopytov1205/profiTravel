@@ -1,0 +1,84 @@
+.subscription__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+   margin-left: 40px;
+}
+
+.subscription__button {
+   position: relative;
+   width: 264px;
+   height: 44px;
+   padding-right: 44px;
+   border: 1px solid #185adb;
+   color: #000222;
+   background: #fff;
+   border-radius: 56px;
+   font-family: "Proxima Nova Bold", serif;
+   font-size: 18px;
+   line-height: 125%;
+   cursor: pointer;
+   &::after {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      border-radius: 0 56px 56px 0;
+      background: #185adb url("./../../../../../extract/images/Vector.png") center center no-repeat;
+   }
+   &:hover {
+      color: #fff;
+      background: #185adb;
+   }
+   &:hover::after {
+      border-left: 1px solid #fff;
+   }
+}
+
+.subscription__button_enabled {
+   color: #888899;
+   background: #f0f0f0;
+   border: 1px solid #c0c0c0;
+   &::after {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      border-radius: 0 56px 56px 0;
+      border: 1px solid #c0c0c0;
+      background: #f0f0f0 url("./../../../../../extract/images/Vector2.png") center center no-repeat;
+   }
+   &:hover {
+      color: #000222;
+      background-color: #f0f0f0;
+   }
+   &:hover::after {
+      border-left: 1px solid #c0c0c0;
+      background: #f0f0f0 url("./../../../../../extract/images/Vector3.png") center center no-repeat;
+   }
+}
+
+.subscription__participants {
+   font-size: 14px;
+   line-height: 130%;
+   color: #000222;
+}
+
+@media screen and (max-width: 768px) {
+   .subscription__container {
+      margin-left: 0;
+      order: 1;
+      flex-basis: 100%;
+   }
+   .subscription__button {
+      width: 100%;
+      margin-left: 0;
+   }
+}

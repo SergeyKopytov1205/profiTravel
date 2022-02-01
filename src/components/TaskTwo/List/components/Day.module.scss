@@ -1,0 +1,42 @@
+.day__container {
+   border-radius: 24px;
+   background: #ffffff;
+}
+.day__title {
+   padding: 13px 32px;
+   background: #e5e5e5;
+   border-radius: 24px 24px 0 0;
+   display: flex;
+   div {
+      font-size: 24px;
+      line-height: 125%;
+      color: #000222;
+      font-weight: 400;
+   }
+   div:first-child {
+      padding-right: 12px;
+      margin-right: 12px;
+      border-right: 1px solid #000222;
+   }
+}
+.day__content {
+   padding: 40px 32px 24px 32px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+}
+
+@media screen and (max-width: 320px) {
+   .day__title {
+      div {
+         font-size: 18px;
+         line-height: 125%;
+      }
+   }
+   .day__content {
+      padding: 32px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+   }
+}

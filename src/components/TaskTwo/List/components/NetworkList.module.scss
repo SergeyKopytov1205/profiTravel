@@ -1,0 +1,59 @@
+.networkList__container {
+   border-radius: 24px;
+   background-color: #fff;
+}
+.networkList__date {
+   padding: 13px 32px;
+   background: #ffee00;
+   border-radius: 24px 24px 0 0;
+   display: flex;
+   div {
+      font-size: 24px;
+      line-height: 125%;
+      color: #000222;
+      font-weight: 400;
+   }
+   div:first-child {
+      padding-right: 12px;
+      margin-right: 12px;
+      border-right: 1px solid #000222;
+   }
+}
+.networkList__content {
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+.networkList__title {
+   font-size: 16px;
+   line-height: 130%;
+   color: #191919;
+   font-family: "Proxima Nova Bold", sans-serif;
+}
+.networkList__descr {
+   font-size: 13px;
+   line-height: 130%;
+   color: #000222;
+}
+.networkList__button {
+   margin-top: 20px;
+   background: #ffee00;
+   border-radius: 33px;
+   border: none;
+   padding: 9px 21px;
+   font-size: 14px;
+   line-height: 130%;
+   font-family: "Proxima Nova Bold", sans-serif;
+   color: #000222;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+   .networkList__date {
+      div {
+         font-size: 18px;
+         line-height: 125%;
+      }
+   }
+}

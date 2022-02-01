@@ -1,0 +1,23 @@
+.event__container {
+   display: flex;
+   row-gap: 36px;
+   flex-wrap: wrap;
+   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+   .event__subscr_full {
+      display: none;
+   }
+   .event__subscr_small {
+      display: block;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .event__desc {
+      display: flex;
+      flex-direction: column;
+   }
+}

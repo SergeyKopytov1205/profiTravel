@@ -1,0 +1,80 @@
+.link {
+   position: relative;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 24px;
+   letter-spacing: 4px;
+   transition: 0.4s;
+   padding: 10px 30px;
+   color: #555;
+   background-color: #bbb;
+   &:hover {
+      color: #185adb;
+      background-color: #fff;
+   }
+   & span {
+      display: block;
+      position: absolute;
+      background: #185adb;
+      &:nth-child(1) {
+         left: 0;
+         bottom: 0;
+         width: 2px;
+         height: 100%;
+         transition: transform 0.2s;
+         transform: scaleY(0);
+         transform-origin: top;
+      }
+      &:nth-child(2) {
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         height: 2px;
+         transition: transform 0.2s;
+         transform: scaleX(0);
+         transform-origin: right;
+      }
+      &:nth-child(3) {
+         right: 0;
+         bottom: 0;
+         width: 2px;
+         height: 100%;
+         transition: transform 0.2s;
+         transform: scaleY(0);
+         transform-origin: top;
+         transition-delay: 0.2s;
+      }
+      &:nth-child(4) {
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 2px;
+         transition: transform 0.2s;
+         transform: scaleX(0);
+         transform-origin: right;
+         transition-delay: 0.2s;
+      }
+   }
+   &:hover span:nth-child(1) {
+      transform: scaleY(1);
+      transform-origin: bottom;
+      transition: transform 0.2s;
+   }
+   &:hover span:nth-child(2) {
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 0.2s;
+   }
+   &:hover span:nth-child(3) {
+      transform: scaleY(1);
+      transform-origin: bottom;
+      transition: transform 0.2s;
+      transition-delay: 0.2s;
+   }
+   &:hover span:nth-child(4) {
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 0.2s;
+      transition-delay: 0.2s;
+   }
+}

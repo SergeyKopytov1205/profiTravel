@@ -1,0 +1,49 @@
+.network__container {
+   border-radius: 24px;
+   overflow: hidden;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 0;
+   background-color: #fff;
+}
+.network__date {
+   padding: 13px 32px;
+   background: #ffee00;
+   border-radius: 24px 24px 0 0;
+   display: flex;
+   div {
+      font-size: 14px;
+      line-height: 130%;
+      color: #000222;
+      font-family: "Proxima Nova Bold", sans-serif;
+   }
+}
+.network__content {
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+.network__title {
+   font-size: 16px;
+   line-height: 130%;
+   color: #191919;
+   font-family: "Proxima Nova Bold", sans-serif;
+}
+.network__descr {
+   font-size: 13px;
+   line-height: 130%;
+   color: #000222;
+}
+.network__button {
+   margin-top: 20px;
+   background: #ffee00;
+   border-radius: 33px;
+   border: none;
+   padding: 9px 21px;
+   font-size: 14px;
+   line-height: 130%;
+   font-family: "Proxima Nova Bold", sans-serif;
+   color: #000222;
+   cursor: pointer;
+}

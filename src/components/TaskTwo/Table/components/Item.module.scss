@@ -1,0 +1,125 @@
+.item__container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 24px;
+   background-color: #fff;
+   height: 274px;
+   justify-content: space-between;
+}
+.item_content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+.item__time {
+   display: flex;
+   gap: 4px;
+   margin-right: 32px;
+   div {
+      color: #000222;
+      font-family: "Proxima Nova Bold", sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      line-height: 135%;
+   }
+   div:first-child {
+      font-size: 16px;
+      line-height: 130%;
+   }
+}
+.item__live {
+   position: relative;
+   margin-left: auto;
+   font-size: 11px;
+   line-height: 135%;
+   color: #ff0011;
+   padding: 3px 5px 3px 20px;
+   &::before {
+      display: block;
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: #ff0011;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+   }
+}
+.item__organization {
+   color: #185adb;
+   font-size: 11px;
+   line-height: 130%;
+   font-family: "Proxima Nova Semibold Italic", sans-serif;
+   text-decoration: none;
+}
+.item__description {
+   font-size: 13px;
+   line-height: 130%;
+}
+.item__button_disabled {
+   cursor: pointer;
+   margin-left: auto;
+   background-color: transparent;
+   border: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 115px;
+   div {
+      width: 65px;
+      font-size: 11px;
+      line-height: 110%;
+      color: #888899;
+      text-align: right;
+   }
+   button {
+      cursor: pointer;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid #185adb;
+      background: #fff url("./../../../../extract/images/Vector6.png") center center no-repeat;
+   }
+   &:hover button {
+      background: #185adb url("./../../../../extract/images/Vector7.png") center center no-repeat;
+   }
+}
+
+.item__button_enabled {
+   cursor: pointer;
+   margin-left: auto;
+   background-color: transparent;
+   border: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 115px;
+   &:hover button {
+      background: url("./../../../../extract/images/Vector8.png") center center no-repeat;
+      background-color: #fff;
+   }
+   div {
+      width: 65px;
+      font-size: 11px;
+      line-height: 110%;
+      color: #888899;
+      text-align: right;
+   }
+   button {
+      cursor: pointer;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid #c0c0c0;
+      background: transparent url("./../../../../extract/images/Vector5.png") center center no-repeat;
+   }
+}

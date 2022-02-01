@@ -1,0 +1,74 @@
+.taskOne__container {
+   display: flex;
+   width: 280px;
+   margin: 0 auto;
+   min-height: 100vh;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+}
+
+.taskOne__wrap {
+   position: relative;
+}
+
+.taskOne__form {
+   padding: 10px 20px;
+   border-radius: 10px;
+   background-color: #fff;
+   display: flex;
+   gap: 10px;
+}
+.form__input {
+   width: 100%;
+   border: 2px solid rgba(241, 241, 239, 1);
+   &:focus {
+      outline: 0;
+      border: 2px solid rgba(231, 243, 248, 1);
+   }
+}
+.form__input_miss {
+   border: 2px solid rgba(251, 243, 219, 1);
+   &:focus {
+      border: 2px solid rgba(251, 243, 219, 1);
+   }
+}
+.form__input_error {
+   border: 2px solid rgba(253, 235, 236, 1);
+}
+.form__button {
+   padding: 4px 10px;
+   border: 0;
+   border-radius: 20px;
+   background: #185adb;
+   color: #fff;
+   font-style: normal;
+   font-size: 16px;
+   font-weight: 400;
+   &:hover {
+      cursor: pointer;
+   }
+   &:disabled {
+      background: rgba(241, 241, 239, 1);
+      color: #191919;
+      cursor: auto;
+   }
+}
+
+.taskOne__list {
+   margin: 0;
+   padding: 20px 40px; 
+   position: absolute;
+   top: 30px;
+   display: flex;
+   width: 100%;
+   gap: 10px;
+   flex-direction: column;
+   max-height: 300px;
+   overflow-y: scroll;
+   & li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+}
